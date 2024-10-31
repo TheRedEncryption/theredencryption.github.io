@@ -1,0 +1,11 @@
+div.project-outer {
+    flex: auto;
+    height: 100px;
+    background-color: gray;
+    padding: 10px;
+}
+
+div.project-top {
+    background-color: red;
+    flex-direction: row;
+}
