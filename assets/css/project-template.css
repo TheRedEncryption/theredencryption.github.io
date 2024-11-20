@@ -1,7 +1,18 @@
+div.project-holder {
+    background-color: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
 div.project-outer {
     flex: auto;
     background-color: gray;
     padding: 10px;
+    margin-bottom: 2rem;
+    align-content: center;
+    max-width: 50rem;
 }
 
 div.project-top {
