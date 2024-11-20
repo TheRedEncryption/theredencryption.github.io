@@ -1,5 +1,16 @@
+/* IMPORTS */
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+/* STYLESETS */
+project-title {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 3rem;
+}
+
 div.project-holder {
-    background-color: green;
+    /* background-color: green; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -8,16 +19,44 @@ div.project-holder {
 
 div.project-outer {
     flex: auto;
-    background-color: gray;
+    background-color: rgb(218, 218, 218);
     padding: 10px;
     margin-bottom: 2rem;
     align-content: center;
     width: 50rem;
+    padding: 2rem;
 }
 
 div.project-top {
-    background-color: red;
+    /* background-color: red; */
     flex-direction: column;
     align-content: center;
     align-items: center;
+}
+
+div.project-image {
+    background-size: 50rem;
+    min-height: 30rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 2rem;
+}
+
+div.project-middle {
+    font-size: 1.5rem;
+}
+
+div.project-middle,
+platform,
+date {
+    font-family: "Quicksand", sans-serif;
+}
+
+date {
+    text-align: end;
+}
+
+div.project-bottom {
+    display: flex;
+    justify-content: space-between;
 }
