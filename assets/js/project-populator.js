@@ -10,14 +10,27 @@ document.addEventListener("DOMContentLoaded", main);
 
 function main() {
     console.log("[project-populator.js] main function started");
-    /*
-    Things TODO:
-        - populate the project 
-    */
-    projectHolder = document.getElementById("project-holder"); // JQuery?
-    for (let i = 0; i < 10; i++) {
-        projectHolder.innerHTML += populate("Project Test", "./assets/images/test16_9.png", "This is a sample description, to be swapped out later", "The Internet!", "Tomorrow");
+
+    projectHolder = document.getElementById("project-holder");
+
+    fetch('./data/json/projects.json')
+        .then((response) => response.json())
+        .then((json) => {
+            populationLoop(json);
+        });
+}
+
+
+function populationLoop(json) {
+    for (year in json) {
+        for (proj in json[year]) {
+            projectHolder.innerHTML += populateByJSON(json[year][proj]);
+        }
     }
+}
+
+function populateByJSON(json) {
+    return populate(json["name"], json["image"], json["description"], json["platform"], json["date"]);
 }
 
 function populate(projectTitle, imageLink, projectDescription, platform, date) {

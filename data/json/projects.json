@@ -1,0 +1,34 @@
+{
+    "2022": {
+        "000": {
+            "name": "TRE's Taiko Web Map Editor",
+            "image": "./assets/images/test.png",
+            "description": ".tja file maker for Taiko Web",
+            "platform": "Web",
+            "date": "Nov '22 - Dec '22"
+        },
+        "001": {
+            "name": "Some other project",
+            "image": "./assets/images/test4_3.png",
+            "description": "Just for testing purposes",
+            "platform": "Mobile?",
+            "date": "After Dec, before Jan"
+        }
+    },
+    "2023": {
+        "000": {
+            "name": "Test Project 2",
+            "image": "./assets/images/test256.png",
+            "description": "Let's hope this all goes well :D",
+            "platform": "123",
+            "date": "456"
+        },
+        "001": {
+            "name": "Test Project 3",
+            "image": "./assets/images/test16_9.png",
+            "description": "Let's hope this all goes well :D <a href='https://theredencryption.github.io'>test</a>",
+            "platform": "456",
+            "date": "123"
+        }
+    }
+}
