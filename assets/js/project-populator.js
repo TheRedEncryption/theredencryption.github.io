@@ -1,6 +1,7 @@
 // GLOBAL VARIABLES AND CONSTANTS
 
 var projectHolder;
+const MAX_FETCH_RETRIES = 10;
 
 // EVENT BINDINGS
 
@@ -13,18 +14,29 @@ function main() {
 
     projectHolder = document.getElementById("project-holder");
 
-    fetch('./data/json/projects.json')
-        .then((response) => response.json())
-        .then((json) => {
-            populationLoop(json);
-        });
+    safeJsonFetch(0);
 }
 
+function safeJsonFetch(count) {
+    if (count > MAX_FETCH_RETRIES) {
+        console.error("[project-populator.js] maximum fetch retries reached");
+    }
+    try {
+        fetch('./data/json/projects.json')
+            .then((response) => response.json())
+            .then((json) => {
+                populationLoop(json);
+            });
+    } catch (_) {
+        safeJsonFetch(++count);
+    }
+}
 
 function populationLoop(json) {
     for (year in json) {
+        projectHolder.innerHTML = `<h1>${year}</h1>` + projectHolder.innerHTML;
         for (proj in json[year]) {
-            projectHolder.innerHTML += populateByJSON(json[year][proj]);
+            projectHolder.innerHTML = populateByJSON(json[year][proj]) + projectHolder.innerHTML;
         }
     }
 }
@@ -35,26 +47,26 @@ function populateByJSON(json) {
 
 function populate(projectTitle, imageLink, projectDescription, platform, date) {
     return `<div class="project-outer">
-            <div class="project-top">
-                <project-title>
-                    ${projectTitle}
-                </project-title>
-                <br>
-                <div class="project-image" style="background-image: url(${imageLink});">
-                <br>
-            </div>
-            <div class="project-middle">
-                <description>
-                    ${projectDescription}
-                </description>
-            </div>
-            <div class="project-bottom">
-                <platform>
-                    ${platform}
-                </platform>
-                <date>
-                    ${date}
-                </date>
-            </div>
-        </div>`;
+                <div class="project-top">
+                    <project-title>
+                        ${projectTitle}
+                    </project-title>
+                    <br>
+                    <div class="project-image" style="background-image: url(${imageLink});"></div>
+                    <br>
+                </div>
+                <div class="project-middle">
+                    <description>
+                        ${projectDescription}
+                    </description>
+                </div>
+                <div class="project-bottom">
+                    <platform>
+                        ${platform}
+                    </platform>
+                    <date>
+                        ${date}
+                    </date>
+                </div>
+            </div>`;
 }

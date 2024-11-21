@@ -4,9 +4,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
 
 /* STYLESETS */
-project-title {
+project-title,
+h1 {
     font-family: "Bebas Neue", sans-serif;
+}
+
+project-title {
     font-size: 3rem;
+}
+
+h1 {
+    font-size: 5rem;
 }
 
 div.project-holder {
@@ -21,7 +29,7 @@ div.project-outer {
     /* flex: auto; */
     background-color: rgb(218, 218, 218);
     padding: 10px;
-    margin-bottom: 2rem;
+    margin-top: 2rem;
     align-content: center;
     max-width: 50rem;
     width: 90%;
