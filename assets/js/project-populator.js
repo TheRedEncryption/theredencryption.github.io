@@ -34,10 +34,10 @@ function safeJsonFetch(count) {
 
 function populationLoop(json) {
     for (year in json) {
-        projectHolder.innerHTML = `<h1>${year}</h1>` + projectHolder.innerHTML;
         for (proj in json[year]) {
             projectHolder.innerHTML = populateByJSON(json[year][proj]) + projectHolder.innerHTML;
         }
+        projectHolder.innerHTML = `<h1>${year}</h1>` + projectHolder.innerHTML;
     }
 }
 
