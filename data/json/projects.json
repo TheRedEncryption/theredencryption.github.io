@@ -18,7 +18,7 @@
     "2023": {
         "000": {
             "name": "Test Project 2",
-            "image": "./assets/images/test256.png",
+            "image": "./assets/images/template.png",
             "description": "Let's hope this all goes well :D",
             "platform": "123",
             "date": "456"
