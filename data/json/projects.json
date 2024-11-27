@@ -18,7 +18,7 @@
     "2024": {
         "000": {
             "name": "InfiniRun",
-            "image": "./assets/images/infinirun.png",
+            "image": "./assets/images/infinirun_thumbnail.png",
             "description": "My first serious Roblox game that I publicly released. I did not have a lot of Lua experience at the time, so I was quite elated at the fact that I could release something. InfiniRun boasts random tiles, across which you have to run, with different obstacles in a top down view while you run from a wall that's chasing you. There are multiple times of day: Day, Night, and Blood Moon, which change the difficulty of the game. The game has four original sountracks, as well, and you can find InfiniRun <a href=\"https://www.roblox.com/games/15838840401\" target=\"_blank\">on Roblox.</a>",
             "platform": "Roblox",
             "date": "Mar '24"
