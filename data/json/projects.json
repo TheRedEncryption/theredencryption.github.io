@@ -1,34 +1,41 @@
 {
     "2022": {
         "000": {
-            "name": "TRE's Taiko Web Map Editor",
-            "image": "./assets/images/test.png",
-            "description": ".tja file maker for Taiko Web",
-            "platform": "Web",
-            "date": "Nov '22 - Dec '22"
+            "name": "Stay At Mister Ping's Lost Evocation",
+            "image": "./assets/images/SaMPLE_thumbnail.png",
+            "description": "All alone in the deep recesses of the brain, lies the anima of the past... and now he's here, he's near, and he's something to fear... Or, at least, he <i>was</i>, before he was made available on <a href=\"https://gamejolt.com/games/stay_at_mister_pings_lost_evocation/768858\" target=\"_blank\">GameJolt</a>",
+            "platform": "HTML5 Game",
+            "date": "May '22"
         },
         "001": {
-            "name": "Some other project",
-            "image": "./assets/images/test4_3.png",
-            "description": "Just for testing purposes",
-            "platform": "Mobile?",
-            "date": "After Dec, before Jan"
+            "name": "TRE's Taiko Web Map Editor",
+            "image": "./assets/images/tre-taiko-editor_thumbnail_alt.png",
+            "description": "This editor is a .tja file maker for Taiko Web, an online emulator that you can use to play <i>Taiko No Tatsujin</i> inspired maps. As it stands, there is only support for 16 notes per bar, with the notes being either empty, small, or big. You can use the editor <a href=\"https://theredencryption.github.io/tre-taiko-editor/\" target=\"_blank\">here.</a> I learned a lot about HTML Canvas during the development of this project, as well as how one can handle on-screen button inputs, file creation, manipulation, and exporting of said file. In addition to all of that, nearly every graphic was made in MS Paint, as I was working on this from a very limited school computer that only allowed whitelisted programs.",
+            "platform": "Website",
+            "date": "Nov '22 - Dec '22"
         }
     },
-    "2023": {
+    "2024": {
         "000": {
-            "name": "Test Project 2",
-            "image": "./assets/images/template.png",
-            "description": "Let's hope this all goes well :D",
-            "platform": "123",
-            "date": "456"
+            "name": "InfiniRun",
+            "image": "./assets/images/infinirun.png",
+            "description": "My first serious Roblox game that I publicly released. I did not have a lot of Lua experience at the time, so I was quite elated at the fact that I could release something. InfiniRun boasts random tiles, across which you have to run, with different obstacles in a top down view while you run from a wall that's chasing you. There are multiple times of day: Day, Night, and Blood Moon, which change the difficulty of the game. The game has four original sountracks, as well, and you can find InfiniRun <a href=\"https://www.roblox.com/games/15838840401\" target=\"_blank\">on Roblox.</a>",
+            "platform": "Roblox",
+            "date": "Mar '24"
         },
         "001": {
-            "name": "Test Project 3",
-            "image": "./assets/images/test16_9.png",
-            "description": "Let's hope this all goes well :D <a href='https://theredencryption.github.io'>test</a>",
-            "platform": "456",
-            "date": "123"
+            "name": "The Ruby E-Institute of Dreams (The R.E.D.)",
+            "image": "./assets/images/THERED_thumbnail.png",
+            "description": "The R.E.D. is an online platform where those with an account can upload and view articles and videos made by other people, thanks to Google Firebase. This mildly humorous website boasts OAuth authentication, Markdown uploads, a live chatting feature where you can talk to fellow students, and a page where you can explore articles made by others. As this was a school project, a lot of things are left to be desired, but given the scope and time that we had, this website, <a href=\"https://theredencryption.github.io/online-learning-site/\" target=\"_blank\">available here,</a> satisfies expectations.",
+            "platform": "Website",
+            "date": "Feb '24 - May '24"
+        },
+        "002": {
+            "name": "Zen-Matchers",
+            "image": "./assets/images/zenmatchers.png",
+            "description": "With its quiet colors and simplistic interface, Zen Matchers offers the most relaxing card-matching experience that any player could ask for!",
+            "platform": "Roblox",
+            "date": "Mar '24"
         }
     }
 }

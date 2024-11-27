@@ -60,6 +60,7 @@ function populate(projectTitle, imageLink, projectDescription, platform, date) {
                         ${projectDescription}
                     </description>
                 </div>
+                <br>
                 <div class="project-bottom">
                     <platform>
                         ${platform}
