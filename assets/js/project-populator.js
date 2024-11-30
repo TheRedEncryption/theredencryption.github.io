@@ -37,7 +37,7 @@ function populationLoop(json) {
         for (proj in json[year]) {
             projectHolder.innerHTML = populateByJSON(json[year][proj]) + projectHolder.innerHTML;
         }
-        projectHolder.innerHTML = `<h1>${year}</h1>` + projectHolder.innerHTML;
+        projectHolder.innerHTML = `<h2>${year}</h2>` + projectHolder.innerHTML;
     }
 }
 

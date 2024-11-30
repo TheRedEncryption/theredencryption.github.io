@@ -3,8 +3,8 @@
         "000": {
             "name": "Stay At Mister Ping's Lost Evocation",
             "image": "./assets/images/SaMPLE_thumbnail.png",
-            "description": "All alone in the deep recesses of the brain, lies the anima of the past... and now he's here, he's near, and he's something to fear... Or, at least, he <i>was</i>, before he was made available on <a href=\"https://gamejolt.com/games/stay_at_mister_pings_lost_evocation/768858\" target=\"_blank\">GameJolt</a>",
-            "platform": "HTML5 Game",
+            "description": "All alone in the deep recesses of the brain, lies the anima of the past... and now he's here, he's near, and he's something to fear... Or, at least, he <i>was</i>, before he was made available on <a href=\"https://gamejolt.com/games/stay_at_mister_pings_lost_evocation/768858\" target=\"_blank\">GameJolt.</a> Although SaMPLE was made in Scratch, of all things, I still learned the important concepts of game design, from replayability to how core gameloop systems work in conjunction with each other.",
+            "platform": "HTML5",
             "date": "May '22"
         },
         "001": {
@@ -19,9 +19,9 @@
         "000": {
             "name": "InfiniRun",
             "image": "./assets/images/infinirun_thumbnail.png",
-            "description": "My first serious Roblox game that I publicly released. I did not have a lot of Lua experience at the time, so I was quite elated at the fact that I could release something. InfiniRun boasts random tiles, across which you have to run, with different obstacles in a top down view while you run from a wall that's chasing you. There are multiple times of day: Day, Night, and Blood Moon, which change the difficulty of the game. The game has four original sountracks, as well, and you can find InfiniRun <a href=\"https://www.roblox.com/games/15838840401\" target=\"_blank\">on Roblox.</a>",
+            "description": "My first \"serious\" Roblox game that I publicly released. I did not have a lot of Lua experience at the time, so I was quite elated at the fact that I could release something. InfiniRun boasts random tiles, across which you have to run, with different obstacles in a top down view while you run from a wall that's chasing you. There are multiple times of day: Day, Night, and Blood Moon, which change the difficulty of the game. The game has four original sountracks, as well, and you can find InfiniRun <a href=\"https://www.roblox.com/games/15838840401\" target=\"_blank\">on Roblox.</a>",
             "platform": "Roblox",
-            "date": "Mar '24"
+            "date": "Jan '24"
         },
         "001": {
             "name": "The Ruby E-Institute of Dreams (The R.E.D.)",
@@ -33,7 +33,7 @@
         "002": {
             "name": "Zen-Matchers",
             "image": "./assets/images/zenmatchers.png",
-            "description": "With its quiet colors and simplistic interface, Zen Matchers offers the most relaxing card-matching experience that any player could ask for!",
+            "description": "\"With its quiet colors and simplistic interface, Zen Matchers offers the most relaxing card-matching experience that any player could ask for,\" says the description of the game, which proves to be quite true from players who've played the game, telling me that they could 'play the game all day' if they were able to. It's a simple UI-based card matching game on Roblox, complete with calm sounds and an aesthetic that's not aggressive to the eyes, and in the making of this project, I learned all about how the different UI systems and containers of Roblox worked, and how they can interact with scripting in Lua. You can play the game for yourself <a href=\"https://www.roblox.com/games/16584682461/\" target=\"_blank\">here.</a>",
             "platform": "Roblox",
             "date": "Mar '24"
         }
