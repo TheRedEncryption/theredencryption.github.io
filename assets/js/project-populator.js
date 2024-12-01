@@ -3,6 +3,8 @@
 var projectHolder;
 const MAX_FETCH_RETRIES = 10;
 
+var cachedJSON = null;
+
 // EVENT BINDINGS
 
 document.addEventListener("DOMContentLoaded", main);
@@ -14,22 +16,32 @@ function main() {
 
     projectHolder = document.getElementById("project-holder");
 
-    safeJsonFetch(0);
+    safeJsonFetch();
 }
 
-function safeJsonFetch(count) {
+function safeJsonFetch(count = 0) {
     if (count > MAX_FETCH_RETRIES) {
-        console.error("[project-populator.js] maximum fetch retries reached");
+        console.error("[project-populator.js] maximum JSON fetch retries reached");
+        return;
     }
-    try {
-        fetch('./data/json/projects.json')
-            .then((response) => response.json())
-            .then((json) => {
-                populationLoop(json);
-            });
-    } catch (_) {
-        safeJsonFetch(++count);
-    }
+
+    fetch('./data/json/projects.json')
+        .then((response) => {
+            if (!response.ok) {
+                throw new Error(response.status);
+            } else {
+                console.log("[project-populator.js] JSON fetch OK");
+            }
+            return response.json();
+        })
+        .then((json) => {
+            cachedJSON = json;
+            populationLoop(cachedJSON);
+        }).catch((error) => {
+            console.error(`[project-populator.js] JSON fetch failed: ${error.message}`);
+            safeJsonFetch(count + 1);
+        })
+
 }
 
 function populationLoop(json) {

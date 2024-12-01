@@ -10,16 +10,22 @@ html {
 }
 
 button.cta {
-    padding-top: 0.5em;
-    padding-bottom: 0.5em;
-    padding-left: 1em;
-    padding-right: 1em;
+    padding: 0.5em 1em;
+    margin: auto 0.5em;
     background-color: white;
     border-color: rgb(218, 218, 218);
     border-style: solid;
     border-radius: 1em;
     font-size: 1.5em;
     font-family: "Quicksand", sans-serif;
+    cursor: pointer;
+}
+
+#button-bar {
+    position: sticky;
+    top: 0em;
+    background-color: rgb(24, 24, 24);
+    padding: 1em 0em;
 }
 
 a.hide-link {
@@ -28,8 +34,10 @@ a.hide-link {
 }
 
 project-title,
+h1,
+h2,
 h0,
-h2 {
+h-1 {
     font-family: "Bebas Neue", sans-serif;
 }
 
@@ -41,8 +49,17 @@ h0 {
     font-size: 15vw;
 }
 
-h2 {
+h2,
+h-1 {
     font-size: 5rem;
+}
+
+h1 {
+    font-size: 6rem;
+}
+
+p {
+    font-family: "Quicksand", sans-serif;
 }
 
 body {
@@ -57,9 +74,20 @@ div.landing {
     flex-direction: column;
 }
 
+div#button-container {
+    display: flex;
+    justify-content: center;
+}
+
 div.landing {
-    height: 100vh;
-    background-color: rgb(219, 46, 46);
+    height: 75vh;
+    background-color: rgb(24, 24, 24);
+    color: white;
+}
+
+div.landing2 {
+    height: 25vh;
+    background-color: rgb(24, 24, 24);
     color: white;
 }
 
