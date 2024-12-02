@@ -3,10 +3,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
 
+/* ANIMATIONS */
+
+@keyframes hover-text-anim {
+    0% {
+        transform: translateY(5vh);
+    }
+
+    50% {
+        transform: translateY(15vh);
+    }
+
+    100% {
+        transform: translateY(5vh);
+    }
+}
+
 /* STYLESETS */
 
 html {
     scroll-behavior: smooth;
+}
+
+.hover-anim {
+    display: inline-block;
+    animation: hover-text-anim 10s ease-in-out infinite;
 }
 
 button.cta {
