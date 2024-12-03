@@ -70,8 +70,11 @@ h0 {
     font-size: 15vw;
 }
 
-h2,
 h-1 {
+    font-size: 5vw;
+}
+
+h2 {
     font-size: 5rem;
 }
 
