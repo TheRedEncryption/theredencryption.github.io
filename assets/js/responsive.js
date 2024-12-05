@@ -18,12 +18,12 @@ function beginResponsiveDesign() {
 
 function desktopView() {
     console.log("[responsive.js] switching to desktop view");
-    TRE.innerHTML = "TheRedEncryption";
+    TRE.innerHTML = "The<span style=\"color:red;\">Red</span>Encryption";
 }
 
 function mobileView() {
     console.log("[responsive.js] switching to mobile view");
-    TRE.innerHTML = "T.R.E.";
+    TRE.innerHTML = "<span style=\"font-size:45vw;\">T<span style=\"color:red;\">R</span>E</span>";
 }
 
 function switchViewsIfAppropriate() {
