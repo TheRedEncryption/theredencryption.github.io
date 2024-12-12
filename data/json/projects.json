@@ -52,6 +52,20 @@
             "description": "TOREADOR description goes here",
             "platform": "Roblox",
             "date": "May '24"
+        },
+        "004": {
+            "name": "Fetch Quest",
+            "image": "./assets/images/fetch_quest_thumbnail.png",
+            "description": "FQ description goes here",
+            "platform": "Windows",
+            "date": "Sep '24 - Dec '24"
+        },
+        "005": {
+            "name": "DIY Deliveries",
+            "image": "./assets/images/diy_deliveries_thumbnail.png",
+            "description": "DIY Deliveries description goes here",
+            "platform": "Windows",
+            "date": "Nov '24"
         }
     }
 }

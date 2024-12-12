@@ -140,11 +140,10 @@ div.project-top {
 }
 
 div.project-image {
-    background-size: 50rem;
-    min-height: 30rem;
+    background-size: min(50rem, 90vw);
+    min-height: min(30rem, 60vw);
     background-repeat: no-repeat;
     background-position: center;
-    margin: 2rem;
 }
 
 div.project-middle {
