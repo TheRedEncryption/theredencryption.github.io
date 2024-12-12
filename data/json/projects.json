@@ -6,22 +6,15 @@
             "description": "All alone in the deep recesses of the brain, lies the anima of the past... and now he's here, he's near, and he's something to fear... Or, at least, he <i>was</i>, before he was made available on <a href=\"https://gamejolt.com/games/stay_at_mister_pings_lost_evocation/768858\" target=\"_blank\">GameJolt.</a> Although SaMPLE was made in Scratch, of all things, I still learned the important concepts of game design, from replayability to how core gameloop systems work in conjunction with each other.",
             "platform": "HTML5",
             "date": "May '22"
-        },
-        "001": {
-            "name": "TRE's Taiko Web Map Editor",
-            "image": "./assets/images/tre-taiko-editor_thumbnail_alt.png",
-            "description": "This editor is a .tja file maker for Taiko Web, an online emulator that you can use to play <i>Taiko No Tatsujin</i> inspired maps. As it stands, there is only support for 16 notes per bar, with the notes being either empty, small, or big. You can use the editor <a href=\"https://theredencryption.github.io/tre-taiko-editor/\" target=\"_blank\">here.</a> I learned a lot about HTML Canvas during the development of this project, as well as how one can handle on-screen button inputs, file creation, manipulation, and exporting of said file. In addition to all of that, nearly every graphic was made in MS Paint, as I was working on this from a very limited school computer that only allowed whitelisted programs.",
-            "platform": "Website",
-            "date": "Nov '22 - Dec '22"
         }
     },
     "2023": {
         "000": {
-            "name": "some 2023 project",
-            "image": "./assets/images/test-images/test16_9.png",
-            "description": "desc",
-            "platform": "Roblox",
-            "date": "'23"
+            "name": "TRE's Taiko Web Map Editor",
+            "image": "./assets/images/tre-taiko-editor_thumbnail_alt.png",
+            "description": "This editor is a .tja file maker for Taiko Web, an online emulator that you can use to play <i>Taiko No Tatsujin</i> inspired maps. As it stands, there is only support for 16 notes per bar, with the notes being either empty, small, or big. You can use the editor <a href=\"https://theredencryption.github.io/tre-taiko-editor/\" target=\"_blank\">here.</a> I learned a lot about HTML Canvas during the development of this project, as well as how one can handle on-screen button inputs, file creation, manipulation, and exporting of said file. In addition to all of that, nearly every graphic was made in MS Paint, as I was working on this from a very limited school computer that only allowed whitelisted programs.",
+            "platform": "Website",
+            "date": "Nov '22 - Mar '23"
         }
     },
     "2024": {

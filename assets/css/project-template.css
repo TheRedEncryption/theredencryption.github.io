@@ -128,7 +128,7 @@ div.project-outer {
     padding: 10px;
     margin-bottom: 2rem;
     align-content: center;
-    max-width: 50rem;
+    max-width: min(70vw, 50rem);
     width: 90%;
     padding: 2rem;
 }
