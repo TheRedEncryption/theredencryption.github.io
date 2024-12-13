@@ -56,7 +56,7 @@
         "005": {
             "name": "DIY Deliveries",
             "image": "./assets/images/diy_deliveries_thumbnail.png",
-            "description": "DIY Deliveries description goes here",
+            "description": "In DIY Deliveries, you play as a disgruntled Blamazon customer who lost their package somewhere within the warehouse, and decide to take matters into your own hands by hacking into the very robots that make the facility function. This was part of a 48-hour game jam in a group of five, of which I was one of the three programmers. Using our synergy as a combination of programmers, level designer, and audio/art specialist, we made a decently scoped game in those 48 hours despite all odds. If you want to play the game for yourself, you can download the executable through <a href=\"https://itch.io/jam/jamfest-fall-2024/rate/3100810\" target=\"_blank\">this itch.io page.</a>",
             "platform": "Windows",
             "date": "Nov '24"
         }
