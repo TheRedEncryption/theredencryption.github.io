@@ -42,7 +42,7 @@
         "003": {
             "name": "TOREADOR",
             "image": "./assets/images/toreador_thumbnail.png",
-            "description": "TOREADOR description goes here",
+            "description": "In TOREADOR, you square off against Tor The Bull and his robotic compatriots as they break into your house, leaving you with your only defense: your wits. TOREADOR is my first attempt at a <i>large-scale</i> Roblox game, with a considerably larger scope than Zen-Matchers and InfiniRun. From the development of TOREADOR, I've learned that it's important to set reasonable expectations while developing, but in terms of platform-specific development, I've learned a lot about how state can be managed in Roblox and Lua, and how one can intertwine several different types of 3D gameplay into a cohesive product. <a href=\"https://www.roblox.com/games/16772219444/\" target=\"_blank\">TOREADOR</a> is available to play on Roblox.",
             "platform": "Roblox",
             "date": "May '24"
         },
