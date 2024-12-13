@@ -49,7 +49,7 @@
         "004": {
             "name": "Fetch Quest",
             "image": "./assets/images/fetch_quest_thumbnail.png",
-            "description": "FQ description goes here",
+            "description": "Fetch Quest was my first time working on a video game with a team (GADIG) in a meaningful way. The game is an RPG (reminiscent of Zelda and based entirely on dogs) that was made in Godot, and I learned about the quirks of the engine and the intricacies of GDScript. I worked on UI, player health mechanincs, some enemy AI, as well as other world-related things like chests and item types. I had used Git before for version controling my own personal projects, but in GADIG, I learned of the proper way one interacts with a team in the creation of a game. Through GADIG, and through collaborating on this project, I made my way into the professional world in this low-stakes environment that helped me succeed.",
             "platform": "Windows",
             "date": "Sep '24 - Dec '24"
         },
