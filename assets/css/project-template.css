@@ -54,6 +54,12 @@ a.hide-link {
     text-decoration: none;
 }
 
+.space-upwards {
+    position: relative;
+    top: -4.5em;
+}
+
+
 project-title,
 h1,
 h2,
