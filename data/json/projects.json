@@ -49,7 +49,7 @@
         "004": {
             "name": "Fetch Quest",
             "image": "./assets/images/fetch_quest_thumbnail.png",
-            "description": "Fetch Quest was my first time working on a video game with a team (GADIG) in a meaningful way. The game is an RPG (reminiscent of Zelda and based entirely on dogs) that was made in Godot, and I learned about the quirks of the engine and the intricacies of GDScript. I worked on UI, player health mechanincs, some enemy AI, as well as other world-related things like chests and item types. I had used Git before for version controling my own personal projects, but in GADIG, I learned of the proper way one interacts with a team in the creation of a game. Through GADIG, and through collaborating on this project, I made my way into the professional world in this low-stakes environment that helped me succeed.",
+            "description": "<a href=\"https://gadig.itch.io/fetch-quest\" target=\"_blank\">Fetch Quest</a> was my first time working on a video game with a team (GADIG) in a meaningful way. The game is an RPG (reminiscent of Zelda and based entirely on dogs) that was made in Godot, and I learned about the quirks of the engine and the intricacies of GDScript. I worked on UI, player health mechanincs, some enemy AI, as well as other world-related things like chests and item types. I had used Git before for version controling my own personal projects, but in GADIG, I learned of the proper way one interacts with a team in the creation of a game. Through GADIG, and through collaborating on this project, I made my way into the professional world in this low-stakes environment that helped me succeed.",
             "platform": "Windows",
             "date": "Sep '24 - Dec '24"
         },
@@ -59,6 +59,15 @@
             "description": "In DIY Deliveries, you play as a disgruntled Blamazon customer who lost their package somewhere within the warehouse, and decide to take matters into your own hands by hacking into the very robots that make the facility function. This was part of a 48-hour game jam in a group of five, of which I was one of the three programmers. Using our synergy as a combination of programmers, level designer, and audio/art specialist, we made a decently scoped game in those 48 hours despite all odds. If you want to play the game for yourself, you can download the executable through <a href=\"https://itch.io/jam/jamfest-fall-2024/rate/3100810\" target=\"_blank\">this itch.io page.</a>",
             "platform": "Windows",
             "date": "Nov '24"
+        }
+    },
+    "2025": {
+        "000": {
+            "name": "Bake Me Crazy",
+            "image": "./assets/images/bake_me_crazy_thumbnail.png",
+            "description": "A combination of a dating sim and a cooking game, Bake Me Crazy was my second game working with GADIG, the game design group that makes a whole game every semester. I primarily worked on the free-roam stage's player movement, as well as the \"shaping\" minigame that you have to do in the cooking phase. I furthered my knowledge of working in Godot, and continued to learn about how the professional game development world worked.",
+            "platform": "Windows",
+            "date": "Feb '25 - May '25"
         }
     }
 }
