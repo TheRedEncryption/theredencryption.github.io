@@ -25,6 +25,11 @@ html {
     scroll-behavior: smooth;
 }
 
+/* global border-box */
+*, *::before, *::after {
+    box-sizing: border-box;
+} 
+
 .hover-anim {
     display: inline-block;
     animation: hover-text-anim 10s ease-in-out infinite;
@@ -104,7 +109,59 @@ div.about-me-body {
     color: white;
 }
 
-div.project-holder,
+/* fixed-size cards */
+div.project-holder {
+    display: grid;
+
+    grid-template-columns: repeat(auto-fit, 480px);
+    gap: 2.5rem;
+
+    grid-auto-rows: auto; 
+    grid-auto-flow: row; 
+
+    justify-content: center; 
+    justify-items: center; 
+
+    align-items: start;
+    align-content: start;
+
+    padding: 2rem;
+    max-width: 1600px;
+    margin: 0 auto; 
+    overflow-x: hidden; 
+} 
+
+div.project-holder h2 {
+    grid-column: 1 / -1;
+    width: 100%;
+    text-align: left;
+    margin: 0 0 0.5rem 0;
+    padding: 0.25rem 0;
+}
+
+/* responsive column counts */
+@media (max-width: 1100px) {
+    div.project-holder {
+        grid-template-columns: repeat(2, minmax(220px, 1fr));
+    }
+}
+
+@media (max-width: 100vh) {
+    div.project-holder {
+        grid-template-columns: 1fr;
+        padding: 1rem;
+        gap: 1.25rem;
+    }
+    div.project-outer {
+        max-width: none;
+        width: 100%;
+        min-height: 18rem;
+    }
+    div.project-image {
+        min-height: 12rem;
+    }
+} 
+
 div.landing {
     display: flex;
     justify-content: center;
@@ -131,25 +188,44 @@ div.landing2 {
 
 div.project-outer {
     background-color: rgb(218, 218, 218);
-    padding: 10px;
-    margin-bottom: 2rem;
+    padding: 1rem;
+    margin: 0;
     align-content: center;
-    max-width: min(70vw, 50rem);
-    width: 90%;
-    padding: 2rem;
-}
+    width: 100%;
+    max-width: 480px; 
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    min-height: 24rem; 
+    min-width: 0; 
+    overflow: hidden;
+    border: 1px solid rgba(0,0,0,0.04);
+    flex-shrink: 0; 
+    word-break: break-word; 
+} 
 
 div.project-top {
+    display: flex;
     flex-direction: column;
     align-content: center;
     align-items: center;
+    gap: 0.75rem;
+    width: 100%;
 }
 
 div.project-image {
-    background-size: min(50rem, 90vw);
-    min-height: min(30rem, 60vw);
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    min-height: 14rem; 
+    max-height: 50vh;
 }
 
 div.project-middle {

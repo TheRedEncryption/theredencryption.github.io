@@ -49,7 +49,7 @@ function populationLoop(json) {
         for (proj in json[year]) {
             projectHolder.innerHTML = populateByJSON(json[year][proj]) + projectHolder.innerHTML;
         }
-        projectHolder.innerHTML = `<h2>${year}</h2>` + projectHolder.innerHTML;
+        // projectHolder.innerHTML = populateYearCard(year) + projectHolder.innerHTML;
     }
 }
 
@@ -67,19 +67,39 @@ function populate(projectTitle, imageLink, projectDescription, platform, date) {
                     <div class="project-image" style="background-image: url(${imageLink});"></div>
                     <br>
                 </div>
-                <div class="project-middle">
-                    <description>
-                        ${projectDescription}
-                    </description>
-                </div>
-                <br>
-                <div class="project-bottom">
-                    <platform>
-                        ${platform}
-                    </platform>
-                    <date>
-                        ${date}
-                    </date>
-                </div>
             </div>`;
 }
+
+function populateYearCard(year) {
+    return `<div class = "project-outer">
+                <project-title>
+                    ${year}
+                </project-title>
+            </div>`;
+}
+
+// old template string, need this for reference later
+// `<div class="project-outer">
+//     <div class="project-top">
+//         <project-title>
+//             ${projectTitle}
+//         </project-title>
+//         <br>
+//         <div class="project-image" style="background-image: url(${imageLink});"></div>
+//         <br>
+//     </div>
+//     <div class="project-middle">
+//         <description>
+//             ${projectDescription}
+//         </description>
+//     </div>
+//     <br>
+//     <div class="project-bottom">
+//         <platform>
+//             ${platform}
+//         </platform>
+//         <date>
+//             ${date}
+//         </date>
+//     </div>
+// </div>`
