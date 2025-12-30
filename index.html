@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="assets/css/project-template.css">
     <script src="assets/js/project-populator.js"></script>
     <script src="assets/js/responsive.js"></script>
+    <script src="assets/js/modal.js"></script>
     <link rel="icon" type="image/x-icon" href="favicon.png">
 </head>
 
@@ -67,6 +68,15 @@
     <br><br>
 
     <div class="project-holder" id="project-holder"></div>
+
+    <!-- Modal -->
+    <div id="myModal" class="modal" aria-hidden="true">
+        <div class="modal-content" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+            <span class="close" aria-label="Close">&times;</span>
+            <h3 id="modal-title"></h3>
+            <div id="modal-body"></div>
+        </div>
+    </div>
 </body>
 
 </html>
