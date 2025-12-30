@@ -45,12 +45,35 @@ function safeJsonFetch(count = 0) {
 }
 
 function populationLoop(json) {
+    projectHolder.innerHTML = '';
     for (year in json) {
         for (proj in json[year]) {
             projectHolder.innerHTML = populateByJSON(json[year][proj]) + projectHolder.innerHTML;
         }
         // projectHolder.innerHTML = populateYearCard(year) + projectHolder.innerHTML;
     }
+    attachProjectHandlers();
+}
+
+function attachProjectHandlers() {
+    const cards = document.querySelectorAll('.project-outer');
+    cards.forEach(card => {
+        // click to open modal
+        card.addEventListener('click', () => {
+            const title = card.dataset.title || card.querySelector('project-title')?.textContent.trim() || '';
+            const descElem = card.querySelector('.project-description');
+            const description = descElem ? descElem.innerHTML : '';
+            window.openProjectModal({ title: title, description: description });
+        });
+        // keyboard accessibility
+        card.setAttribute('tabindex', '0');
+        card.addEventListener('keydown', (e) => {
+            if (e.key === 'Enter' || e.key === ' ') {
+                e.preventDefault();
+                card.click();
+            }
+        });
+    });
 }
 
 function populateByJSON(json) {
@@ -58,7 +81,7 @@ function populateByJSON(json) {
 }
 
 function populate(projectTitle, imageLink, projectDescription, platform, date) {
-    return `<div class="project-outer">
+    return `<div class="project-outer" data-title="${projectTitle}">
                 <div class="project-top">
                     <project-title>
                         ${projectTitle}
@@ -67,6 +90,7 @@ function populate(projectTitle, imageLink, projectDescription, platform, date) {
                     <div class="project-image" style="background-image: url(${imageLink});"></div>
                     <br>
                 </div>
+                <div class="project-description" style="display:none;">${projectDescription}</div>
             </div>`;
 }
 

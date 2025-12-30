@@ -52,6 +52,7 @@ button.cta {
     top: 0em;
     background-color: rgb(24, 24, 24);
     padding: 1em 0em;
+    z-index: 99999;
 }
 
 a.hide-link {
@@ -204,8 +205,16 @@ div.project-outer {
     overflow: hidden;
     border: 1px solid rgba(0,0,0,0.04);
     flex-shrink: 0; 
-    word-break: break-word; 
-} 
+    word-break: break-word;
+    cursor: pointer;
+
+    transform: scale(1);
+    transition: transform 0.15s ease-in-out;
+}
+
+div.project-outer:hover {
+    transform: scale(1.1);
+}
 
 div.project-top {
     display: flex;
@@ -246,3 +255,85 @@ div.project-bottom {
     display: flex;
     justify-content: space-between;
 }
+
+/* Modal styles */
+.modal {
+    display: none; /* hidden by default */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 5% auto;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    max-width: 800px;
+    width: calc(100% - 2rem);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.25);
+}
+
+.modal .close {
+    float: right;
+    font-size: 1.5rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+#modal-body {
+    margin-top: 0.5rem;
+    font-family: "Quicksand", sans-serif;
+    font-size: 1.5rem;
+    color: #222;
+}
+
+#modal-title {
+    margin: 0 0 0.5rem 0;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 2.75rem;
+}
+
+
+/* modal stuff */
+.desc-modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+} 
