@@ -68,6 +68,22 @@
             "description": "A combination of a dating sim and a cooking game, Bake Me Crazy was my second game working with GADIG, the game design group that makes a whole game every semester. I primarily worked on the free-roam stage's player movement, as well as the \"shaping\" minigame that you have to do in the cooking phase. I furthered my knowledge of working in Godot, and continued to learn about how the professional game development world worked. <a href=\"https://gadig.itch.io/bake-me-crazy\" target=\"_blank\">The game is available to play on Itch.</a>",
             "platform": "Windows",
             "date": "Feb '25 - May '25"
+        },
+        "001": {
+            "name": "Deadshot",
+            "image": "./assets/images/deadshot_thumbnail.png",
+            "description": "A 2.5D shoot-em-up featuring a fugitive, initially intending on proving his innocence and saving his horse, finding out that the denizens of his beloved town have been overrun and transformed into horrible creatures that must now be killed. This was GADIG's, and thus my, first venture into Godot's 3D capabilities, as while I had made use of 3D engines before (i.e., Roblox Studio and Unity), it was quite obvious that 3D in Godot is different. As with our other GADIG games, you can <a href=\"https://gadig.itch.io/deadshot\" target=\"_blank\">play Deadshot on Itch.</a>",
+            "platform": "Windows",
+            "date":"Sep '25 - Dec '25"
+        }
+    },
+    "2026": {
+        "000": {
+            "name": "Kingfisher",
+            "image": "./assets/images/test-images/WIP.png",
+            "description": "Kingfisher!",
+            "platform": "Windows",
+            "date": "Feb '26 - May '26"
         }
     }
 }
