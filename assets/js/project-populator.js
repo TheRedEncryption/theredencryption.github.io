@@ -48,6 +48,7 @@ function populationLoop(json) {
     projectHolder.innerHTML = '';
     for (year in json) {
         for (proj in json[year]) {
+            if (json[year][proj]["hidden"]) { continue; }
             projectHolder.innerHTML = populateByJSON(json[year][proj]) + projectHolder.innerHTML;
         }
         // projectHolder.innerHTML = populateYearCard(year) + projectHolder.innerHTML;
